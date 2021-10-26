@@ -9,7 +9,7 @@ from scipy.fftpack import fft
 t = np.linspace(0,10,20000)                                 # Tempo
 E0 = 6                                                      # tensão de pico da portadora
 noise = np.random.normal(scale = 0.01, size = len(t))       # ruido frequencia portadora
-fc = 750                                             # frequência portadora
+fc = 750 + noise                                            # frequência portadora
 phi_c = 0                                                   # Fase campo
 fm = 40  + noise                                                   # Frequência modular
 m = 2                                                       # Indice de modulação(Vp)
